@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký du lịch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Đăng ký du lịch</h2>
+    <form action="">
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input name="name" type="text" size="45"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input name="add" type="text" size="40"></td>
+            </tr>
+            <tr>
+                <td>Phone number</td>
+                <td><input name="Phone" type="number"></td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td><input type="checkbox" name="VN" value="VN"></td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select name="tour" id="tour">
+                        <optgroup label="Miền Bắc">
+                            <option value="NT-DL">Nha Trang - Đà Lạt</option>
+                            <option value="BMT-GL-KT">Buôn Mê Thuột - Gia Lai - Kom Tum</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input type="radio" name="phuongtien" value="maybay">Máy bay
+                    <input type="radio" name="phuongtien" value="oto">Ô tô
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <fieldset>
+                        <legend>Chọn sản phẩm tham gia</legend>
+                        <div align="center">
+                            Người lớn
+                            <input type="text" size="1">
+                            Trẻ em
+                            <input type="text" size="1">
+                        </div>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td><textarea name="ghichu" id="ghichu" cols="40" rows="2"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="btn btn">
+                    <button type="submit" onclick="submit()">Đăng nhập</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span type="text" style="color: red;" id="alert"></span>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+<script>
+    function submit() {
+        document.getElementById("alert").innerText = "Bạn đã đăng ký thành công!";
+
+    }
+</script>
+
+</html>
