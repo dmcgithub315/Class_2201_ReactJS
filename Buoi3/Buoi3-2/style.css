@@ -1,0 +1,18 @@
+table tr td {
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    background-color: #90ee90;
+    color: #5cb040;
+}
+.submit{
+    text-align: center;
+}
+#alert{
+    text-align: center;
+}
+fieldset{
+    width: 350px; 
+    height: 55px;
+}

@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+img{
+    height: 800px;
+}
+
+.flex{
+    display: flex;
+}
+ul{
+    font-size: 25px;
+    margin-left: 50px;
+}
+ol{
+    font-size: 25px;
+}
+b{
+    font-size: 25px;
+}
+.ol{
+    background-color: red;
+    color: white;
+}
+.none{
+    margin-left: 30px;
+}
