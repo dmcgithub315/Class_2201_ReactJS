@@ -11,7 +11,7 @@
 
 <body>
     <h2>Đăng ký du lịch</h2>
-    <form action="">
+    <form method="get">
         <table>
             <tr>
                 <td>Họ và tên</td>
@@ -66,8 +66,8 @@
             </tr>
 
             <tr>
-                <td colspan="2" class="btn btn">
-                    <button type="submit" onclick="submit()">Đăng nhập</button>
+                <td colspan="2" class="signin">
+                    <button type="submit" onclick="dk(event)">Đăng nhập</button>
                 </td>
 
             </tr>
@@ -82,7 +82,8 @@
 
 </body>
 <script>
-    function submit() {
+    function dk(e) {
+        e.preventDefault()
         document.getElementById("alert").innerText = "Bạn đã đăng ký thành công!";
 
     }
