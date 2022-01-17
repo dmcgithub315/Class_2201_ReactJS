@@ -6,15 +6,17 @@ table{
     background-color: #90ee90;
     color: #5cb040;
 }
-.signin{
+td .signin {
+    display: block;
     margin: 0 auto;
 }
-}
-#alert{
-    margin: 0 auto;
+td #alert {
+    display: block;
+    text-align: center
 }
 fieldset{
     width: 350px; 
     height: 55px;
 }
+
 
